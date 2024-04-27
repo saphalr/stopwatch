@@ -17,6 +17,15 @@ let minutes = 0;
 let seconds = 0;
 let miliseconds = 0;
 
+hour1.textContent = "0";
+hour2.textContent = "0";
+minute1.textContent = "0";
+minute2.textContent = "0";
+second1.textContent = "0";
+second2.textContent = "0";
+mili1.textContent = "0";
+mili2.textContent = "0";
+
 function updateStopWatch() {
   miliseconds++;
   if (miliseconds >= 100) {
@@ -63,7 +72,15 @@ reset.addEventListener("click", function () {
   seconds = 0;
   miliseconds = 0;
 
-  updateStopWatch();
+  hour1.textContent = "0";
+  hour2.textContent = "0";
+  minute1.textContent = "0";
+  minute2.textContent = "0";
+  second1.textContent = "0";
+  second2.textContent = "0";
+  mili1.textContent = "0";
+  mili2.textContent = "0";
+
   start.disabled = false;
   start.textContent = "Start";
 });
